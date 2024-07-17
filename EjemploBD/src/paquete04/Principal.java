@@ -17,7 +17,7 @@ public class Principal {
     
     public static void main(String[] args) throws SQLException {
         EnlaceDos c = new EnlaceDos();
-        Ciudad ciudad = new Ciudad("Cuenca", 100123);
+        Ciudad ciudad = new Ciudad("Loja 2", 100123);
         c.insertarCiudad(ciudad);
         
         c.establecerListaCiudad();
