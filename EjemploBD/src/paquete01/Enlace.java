@@ -69,6 +69,11 @@ public class Enlace {
             
             ResultSet rs = statement.executeQuery(data);
             while(rs.next()){
+                // Para enviar los parametros para crear un objeto de tipo 
+                // Ciudad, se obtiene el nombre de la primera columna de la 
+                // tabla "nombre", que es una String
+                // en la base de datos, y se realiza lo mismo
+                // para los datos de la columna "poblacion"
                 Ciudad miCiudad = new Ciudad(rs.getString("nombre"),
                 rs.getInt("poblacion"));
                 lista.add(miCiudad);
