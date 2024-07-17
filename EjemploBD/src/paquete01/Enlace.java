@@ -47,6 +47,7 @@ public class Enlace {
         try{  
             establecerConexion();
             Statement statement = obtenerConexion().createStatement();
+            // Ciudad es el nombre de la tabla que esta en la base de datos
             String data = String.format("INSERT INTO Ciudad (nombre, poblacion) "
                     + "values ('%s', %d)", ciudad.obtenerNombre(), 
                     ciudad.obtenerPoblacion());
